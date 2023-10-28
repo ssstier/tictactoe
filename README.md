@@ -12,7 +12,7 @@
 
 ## Overview
 
-Tic-Tac-Toe Online is a **desktop application** designed to offer both online and offline gameplay options. Play against global opponents or play a CPU.
+Tic-Tac-Toe Online is a **desktop application** that offers both online and offline gameplay options. Play against global opponents or play a CPU!
 
 For your security, all online communications, including real-time chat, are **secured with TLS encryption**.
 
