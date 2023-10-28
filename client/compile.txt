@@ -1,0 +1,18 @@
+1. Create a venv:
+python -m venv myenv
+
+2. actvate the venv
+  Windows:
+    myenv\Scripts\activate
+  Linux:
+    source myenv/bin/activate
+
+2. Install dependencies and pyinstaller
+pip install requirements.txt
+pip install pyinstaller
+
+3. Compile file
+  Windows:
+    pyinstaller --onefile --noconsole --icon=icon.ico --add-data "icon.ico;." --add-data "images;images" --add-data "sounds;sounds" tictactoe.py
+  Linux:
+    pyinstaller --onefile --noconsole --add-data "images:images" --add-data "sounds:sounds" tictactoe.py

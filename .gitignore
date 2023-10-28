@@ -1,0 +1,13 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# Virtual environment
+myenv/
+
+# PEM Certificate files
+*.pem
+
+# Compile files
+build/
+dist/
+*.spec

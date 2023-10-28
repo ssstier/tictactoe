@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+package tictactoe;
+
+// Enumerating player shapes
+enum PlayerShape {
+    UNKNOWN_SHAPE = 0;
+    X = 1;
+    O = 2;
+}
+
+// General message structure to handle different message types
+message TicTacToeMessage {
+    MessageType type = 1;
+    string content = 2; 
+    PlayerType player = 3; 
+    int32 win_type = 4; 
+    bool is_your_turn = 5; 
+    PlayerShape player_shape = 6;
+    string version = 7;
+}
+
+// Enumerating different message types for better clarity
+enum MessageType {
+    START = 0;
+    CHAT = 1;
+    MOVE = 2;
+    RESET_REQUEST = 3;
+    RESET_CONFIRMATION = 4;
+    MESSAGE = 5;
+    PLAY_AGAIN = 6;
+    VERSION_CHECK = 7;
+}
+
+// Enumerating player types
+enum PlayerType {
+    UNKNOWN_PLAYER = 0;
+    PLAYER_1 = 1;
+    PLAYER_2 = 2;
+}
