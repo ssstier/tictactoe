@@ -24,7 +24,7 @@ This project consists of the following main directories:
   
   * [LICENSE](./LICENSE), a text file containing the license for the project.
   
-  * [server](./server), a subdirectory containing the server-side source code. See its [server_setup.txt](./server/server_setup.txt) for setup instructions.
+  * [server](./server), a subdirectory containing the server-side source code. See its [server_setup.txt](./server/server_setup.md) for setup instructions.
   
   * [client](./client), a subdirectory containing the client-side source code. See its [compile.txt](./client/compile.txt) for instructions to compile a client yourself.
   
