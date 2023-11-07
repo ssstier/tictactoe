@@ -193,9 +193,8 @@ class TicTacToeServer:
                 else:
                     has_logged_max_capacity = False
 
-                conn, _ = server_socket.accept()
-
                 try:
+                    conn, _ = server_socket.accept()
                     data = conn.recv(1024)
                     msg = TicTacToeMessage()
                     msg.ParseFromString(data)
